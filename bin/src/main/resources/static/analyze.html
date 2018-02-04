@@ -13,7 +13,7 @@
 
 <body class="bg-dark">
     <!-- NavBar -->
-    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">VCite</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -21,11 +21,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="analyze.html">Analyzer</a>
                 </li>
                 <li class="nav-item">
@@ -45,36 +45,40 @@
             </ul>
         </div>
     </nav>
-    <div class="container-fixed splashBox"> 
-        <div class="splash">
-            <div class="splashText">
-                <h1 class="text-danger">VCite: Video Citation Machine</h1>
-            </div>
+    <div class="container-fluid">
+        <h1 class="h1Cent">Analyzer</h1>
+        <p class="h1Cent">Here, upload a file, or paste text to have it analyzed and transcribed!</p>
+        <div class="container">
+            <!-- Action to something -->
+            <form action="">
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Upload file here</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Alternatively, paste the URL to your Youtube Video here:</label>
+                    <input class="form-control" type="text" placeholder="https://www.youtube.com/watch...">
+                </div>
+
+            </form>
+            <button class="btn btn-danger" type="submit">Analyze!</button>
+            <h3 class="h1Cent">Your transcribed text:</h3>
+            <form action="">
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
+            </form>
+            <button class="btn btn-danger" type="submit">Ready to move on? Annotate!</button>
         </div>
     </div>
-    
-        <div class="container-fixed choose">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="chooseL col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <a href="analyze.html">
-                                    <img class="frontImg" src="public/images/analyze.jpg" alt=""></a>
-                    </div>
-                    <div class="chooseR col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                           <a href="annotate.html">
-                                <img class="frontImg" src="public/images/annotate.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="public/js/script.js"></script>
+    <script src="public/js/script.js"></script>
 </body>
 
 </html>

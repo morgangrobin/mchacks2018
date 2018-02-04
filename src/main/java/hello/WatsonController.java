@@ -31,7 +31,7 @@ public class WatsonController {
 	
 	private static String content = "this is #the thing* and this is trash# and this is the thing* and this is trash#thing!*";
 	
-    @RequestMapping("/analyze")
+   // @RequestMapping("/analyze")
     public void analyze(@RequestParam(value="name", required=false, defaultValue="") String name, Model model) throws Exception {
     		ArrayList<String> sentences = getSentences(content);
     		System.out.println(sentences);
