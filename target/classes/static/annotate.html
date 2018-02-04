@@ -13,7 +13,7 @@
 
 <body class="bg-dark">
     <!-- NavBar -->
-    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">VCite</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -21,14 +21,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="index.html">Home
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="analyze.html">Analyzer</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="annotate.html">Annotater</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -45,36 +45,43 @@
             </ul>
         </div>
     </nav>
-    <div class="container-fixed splashBox"> 
-        <div class="splash">
-            <div class="splashText">
-                <h1 class="text-danger">VCite: Video Citation Machine</h1>
-            </div>
+    <div class="container-fluid">
+        <h1 class="h1Cent">Annotater</h1>
+        <p class="h1Cent">Here, you will be able to paste in your text, and designate where you need citations!</p>
+        <div class="container">
+            <!-- Action to something -->
+            <form action="">
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Transcribed Text Here. Add an asterisk (⁎) to the end of any sentence that needs a citation.</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                        <label for="exampleFormControlFile1">Here, add the links or titles of the sources you used to create your content. Please separate them by commas.</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        <label for="exampleFormControlFile1">Don't worry about formatting! We automatically cite our sources using the Chicago / Turabian format.</label>
+                </div>
+            </form>
+
+            </form>
+            <button class="btn btn-danger" type="submit">Annotate!</button>
+            <h3 class="h1Cent">Upon submission, your newly annotated text should appear below:  </h3>
+            <form action="">
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
+            </form>
+            <button class="btn btn-danger mb-3" type="submit">YouTube friendly file format</button>
+            <button class="btn btn-danger mb-3" type="submit">Raw Text</button>
         </div>
     </div>
-    
-        <div class="container-fixed choose">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="chooseL col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <a href="analyze.html">
-                                    <img class="frontImg" src="public/images/analyze.jpg" alt=""></a>
-                    </div>
-                    <div class="chooseR col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                           <a href="annotate.html">
-                                <img class="frontImg" src="public/images/annotate.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="public/js/script.js"></script>
+    <script src="public/js/script.js"></script>
 </body>
 
 </html>
